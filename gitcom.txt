@@ -1,0 +1,15 @@
+création du repo sur github
+git clone <repo>
+création des fichiers demandés
+git add .
+git commit -m "init project with main files as required"
+git push origin main
+git branch develop
+git checkout -b Feature/Database-setup
+modification du fichier database.sql (avec ajout de BEGIN et COMMIT pour la transaction en un seul bloc)
+git add data/database.sql
+git commit -m "add test data to database.sql"
+git push origin Feature/Database-setup
+git checkout develop
+git merge Feature/Database-setup
+git push origin develop
