@@ -1,0 +1,5 @@
+CREATE TABLE employes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    lastname VARCHAR(255) NOT NULL,
+    firstname VARCHAR(255) NOT NULL
+);
